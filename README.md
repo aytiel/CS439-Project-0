@@ -1,3 +1,3 @@
 # CS439-Project-0
 
-http://www.cs.utexas.edu/~ans/classes/cs439/projects/shell_project/shell.html
+The purpose of this assignment is to become more familiar with the concepts of process control and signalling. You'll do this by writing a simple Unix shell program that supports job control. 
