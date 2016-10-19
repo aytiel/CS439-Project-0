@@ -1,0 +1,136 @@
+################
+YOUR INFO
+################
+Name1: Alexander Lo
+EID1: atl766
+CS login: atlo1126
+Email: alexander.lo@utexas.edu
+Unique Number: 51455
+
+Slip days used: 0
+
+****EACH student submits a (unique) design document.****
+
+################
+YOUR PARTNER'S INFO
+################
+Name1: Kamron Ledet
+EID1: kal2763
+CS login: kledet
+Email: kamron.ledet@gmail.com
+Unique Number: 51455
+
+Your partner's ranking (scale below): Excellent
+
+################
+PARTNER EVALUATION SCALE
+################
+Excellent: Consistently went above and beyond - tutored others, carried
+more than his/her fair share of the load.
+
+Very Good: Consistently did what he/she was supposed to do, very well
+prepared and cooperative.
+
+Satisfactory: Usually did what he/she was supposed to do, minimally
+prepared and cooperative.
+
+Marginal: Sometimes failed to show up and/or rarely prepared.
+
+Deficient: Often failed to show up and/or rarely prepared.
+
+Unsatisfactory: Consistently failed to show up and/or unprepared.
+
+Superficial: Practically no participation.
+
+No Show: No participation at all.
+
+################
+Preliminaries
+################
+(1) If you have any preliminary comments on your submission, notes for
+  the TAs, or extra credit, please give them here.
+
+(2) Please cite any offline or online sources you consulted while
+  preparing your submission, other than the Linux documentation,
+  course text, and lecture notes.
+
+
+################
+Questions regarding Part 0
+################
+(1) How many child processes are created when doFib() begins with
+  an input of 5?  Show the return value for each child process, numbering
+  the processes beginning with 0 (the original process) and incrementing for
+  each child process.
+
+  Process - Value
+  0 - 5
+  1 - 2
+  2 - 3
+  3 - 2
+  4 - 1
+  5 - 0
+  6 - 1
+  7 - 1
+  8 - 0
+  9 - 1
+  10 - 1
+  11 - 1
+  12 - 0
+  13 - 1
+  14 - 1
+
+  14 child processes  
+
+(2) In part 0.3, which flavor of exec did you choose to use?  Why?
+
+  execve; The v corresponds to the command line arguments as an array of pointers. The e 
+  corresponds to an array of pointers to environment variables that can affect the way 
+  processes behave. Since the shell deals with argv, an array of pointers, this flavor of 
+  exec is most appropriate. 
+
+################
+Questions regarding Part 1
+################
+(1) In the provided utility function Signal(), what does the call to
+  sigaction() do?  Why was sigaction() used instead of signal()?
+
+  sigaction() changes the action taken by a process and redirects it to the signal handler 
+  upon receipt of a specific signal (i.e. sigint_handler for SIGINT). sigaction() is more 
+  reliable than signal() because the behavior of signal() has been known to vary across UNIX 
+  or Linux versions. Furthermore, sigaction() allows saving of the old action into a separate 
+  structure. 
+
+(2) What is the last assembly language instruction executed by the
+  signal handler function that you write?  (You may choose either signal
+  handler.)
+  
+  retq
+
+(3) After the instruction identified in the previous question executes, 
+  what is the next assembly language instruction executed in the application 
+  code?
+
+  mov %eax, -0x24(%rbp)
+
+(4) When the signal handler finishes running, it must restore all of
+  the registers from the interrupted thread to exactly their values
+  before the signal occurred. How is this done?
+
+  Context switch; The signal handler utilizes a context switch to store the state of
+  the registers before running. After it finishes running, the context switch restores
+  the state of the thread to maintain an uninterrupted execution.  
+
+################
+Questions regarding Part 2
+################
+(1) In msh.c, we use three separate signal handlers to catch our signals. 
+  You can also use a single signal handler to catch all three signals.  Is
+  there a design advantage of one over the other?  Explain your answer.
+
+  It is more viable to use three separate signal handlers to catch the signals rather
+  than a single signal handler because it eliminates the chance for a signal to interrupt
+  another signal's call to the signal handler and create a race condition.
+
+
+

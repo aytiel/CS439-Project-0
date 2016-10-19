@@ -1,0 +1,34 @@
+9/9, 3:25p - 6:25p, Alex and Kamron, 3 hours
+Drive Order and Time Length:
+Alex: 30 minutes,
+Kamron: 30 minutes,
+Alex: 30 minutes,
+Kamron: 30 minutes,
+Alex: 30 minutes,
+Kamron: 30 minutes
+
+9/11, 6:10p - 8:10p, Alex and Kamron, 2 hours
+Drive Order and Time Length:
+Alex: 30 minutes,
+Kamron: 30 minutes,
+Alex: 30 minutes,
+Kamron: 30 minutes
+
+9/11, 10:15p - 11:15p, Alex and Kamron, 1 hour
+Drive Order and Time Length:
+Alex: 30 minutes,
+Kamron: 30 minutes
+
+9/14, 10:00p - 1:30a, Alex and Kamron, 3.5 hours
+Alex: 30 minutes,
+Kamron: 30 minutes,
+Alex: 30 minutes,
+Kamron: 30 minutes,
+Alex: 30 minutes,
+Kamron: 30 minutes,
+Alex: 30 minutes
+
+9/15, 9:30p - 11:00p, Alex and Kamron, 1.5 hours
+Kamron: 30 minutes,
+Alex: 30 minutes,
+Kamron: 30 minutes
